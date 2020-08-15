@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     companion object {
-        const val CONTAINER = R.id.act_main_container
+        const val CONTAINER = R.id.act_main__container
 
         @JvmStatic
         fun start(activityFrom: Activity, extras: Bundle? = null) {

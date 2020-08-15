@@ -12,6 +12,6 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun startMainActivity() {
-        MainActivity.start(this, intent.extras)
+        MainActivity.start(this, null)
     }
 }
