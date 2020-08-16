@@ -2,18 +2,19 @@ package ru.cutepool.egeikt.activities.main
 
 import android.util.Log
 import androidx.lifecycle.*
+import ru.cutepool.egeikt.BackViewModel
 import ru.cutepool.egeikt.helper.CiceroneHelper
 import ru.cutepool.egeikt.screens.Screens
 import ru.terrakok.cicerone.Router
 import ru.terrakok.cicerone.android.support.SupportAppNavigator
 
-class MainViewModel(private val router: Router) : ViewModel(), LifecycleObserver {
+class MainViewModel(private val router: Router) : BackViewModel(router), LifecycleObserver {
 
     private lateinit var navigator: SupportAppNavigator
     private val navHolder = CiceroneHelper.navHolder()
 
-    fun createWorkoutScreen() {
-        router.newRootChain(Screens.WorkoutScreen())
+    fun createNavigationScreen() {
+        router.newRootChain(Screens.NavigationScreen())
     }
 
     fun setNavigator(navigator: SupportAppNavigator) {
