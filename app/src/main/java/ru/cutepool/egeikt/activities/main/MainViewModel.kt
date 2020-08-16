@@ -13,6 +13,10 @@ class MainViewModel(private val router: Router) : BackViewModel(router), Lifecyc
     private lateinit var navigator: SupportAppNavigator
     private val navHolder = CiceroneHelper.navHolder()
 
+    fun toTaskScreen() {
+        router.navigateTo(Screens.TaskScreen())
+    }
+
     fun createNavigationScreen() {
         router.newRootChain(Screens.NavigationScreen())
     }
