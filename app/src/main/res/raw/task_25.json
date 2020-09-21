@@ -1,0 +1,42 @@
+{
+  "id": 1,
+  "Number": 25,
+  "Body":
+  [
+    {
+      "Text": "Описание задания",
+      "Code": null,
+      "Image": null
+    },
+    {
+      "Text": null,
+      "Code": [
+        "const N = 20;",
+        "var i,j,k:integer;",
+        "a:array [1..N] of integer;",
+        "begin",
+        "for i:=1 to N do",
+        "\treadln(a[i]);",
+        "…",
+        "end."
+      ],
+      "Image": null
+    }
+  ],
+  "Answer": [
+    {
+      "Text": null,
+      "Code": [
+        "const N = 20;",
+        "var i,j,k:integer;",
+        "a:array [1..N] of integer;",
+        "begin",
+        "for i:=1 to N do",
+        "\treadln(a[i]);",
+        "…",
+        "end."
+      ],
+      "Image": null
+    }
+  ]
+}
