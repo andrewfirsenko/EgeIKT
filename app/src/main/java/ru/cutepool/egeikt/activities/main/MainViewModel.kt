@@ -1,6 +1,5 @@
 package ru.cutepool.egeikt.activities.main
 
-import android.util.Log
 import androidx.lifecycle.*
 import ru.cutepool.egeikt.BackViewModel
 import ru.cutepool.egeikt.helper.CiceroneHelper
@@ -27,13 +26,11 @@ class MainViewModel(private val router: Router) : BackViewModel(router), Lifecyc
 
     @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
     private fun setNavigator() {
-        Log.d("M_MainViewModel", "ON_RESUME lifecycle")
         navHolder.setNavigator(navigator)
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
     private fun removeNavigator() {
-        Log.d("M_MainViewModel", "ON_PAUSE lifecycle")
         navHolder.removeNavigator()
     }
 }

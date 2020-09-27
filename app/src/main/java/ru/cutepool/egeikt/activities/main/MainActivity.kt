@@ -4,17 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.Gravity
-import android.view.Menu
-import android.view.MenuItem
-import android.view.View
-import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.appcompat.widget.Toolbar
-import androidx.core.view.GravityCompat
 import androidx.lifecycle.ViewModelProvider
-import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.activity_main.*
 import ru.cutepool.egeikt.R
 import ru.cutepool.egeikt.RouterViewModelFactory
 import ru.cutepool.egeikt.helper.CiceroneHelper
